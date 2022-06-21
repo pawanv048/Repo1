@@ -91,4 +91,95 @@ const myArray = [1,2,3,4,5,6,7,8,9]
 myArray.fill(0,2,5)
 console.log(myArray)
 
-//7:40
+// splice Method
+// argument: start, delete, insert
+/*
+The zero-based location in the array from which to start removing elements.
+Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
+@returns — An array containing the elements that were deleted.
+*/
+
+const itemsArray = ["item1","item2","item3"]
+//delete operation
+//itemsArray.splice(1,2)
+//it also return deleted items
+//console.log(itemsArray)
+
+//inserted
+
+itemsArray.splice(1, 0, "inserted item1")
+console.log(itemsArray)
+
+
+//iterables
+//where we can perform for of loops
+//string, array are iterables but object are not iterables.
+
+//const firstName = 'Pawan'
+
+// for(let char of firstName){
+//     console.log(char)
+// }
+
+const newItem = ["item1","item2","item3"]
+
+for(let item of newItem) {
+    console.log(item)
+}
+
+// objects are not iterables.
+
+// const newItem = {
+//         key1: 'value1',
+//         key2: 'value2',
+//         key3: 'value2'
+//     }
+// for(let item of newItem) {
+//     console.log(item)
+// }
+
+// array like objects
+// we can pass default length,
+// we can access from index as well
+
+const secondName = 'Kumar'
+console.log(secondName.length)
+console.log(secondName[3])
+
+
+// ###### sets(it is also iterable)
+/// store data
+/// it also has it's own method.
+/// No index based access.
+/// order is not guaranteed.
+/// unique items only (no duplicate allowed)
+
+const numb = new Set([1,2,3])
+
+console.log(numb)
+
+// const items = ['item1', 'item2', 'item3'];
+// const numbers = new Set();
+// numbers.add(1);
+// numbers.add(2);
+// numbers.add(3);
+// numbers.add(4);
+// numbers.add(5);
+// numbers.add(6);
+// numbers.add(items);
+// if(numbers.has(1)){
+//     console.log("1 is present")
+// }else{
+//     console.log("1 is not present")
+// }
+// for(let number of numbers){
+//     console.log(number);
+// }
+// const myArray = [1,2,4,4,5,6,5,6];
+// const uniqueElements = new Set(myArray);
+// let length = 0;
+// for(let element of uniqueElements){
+//     length++;
+// }
+
+// console.log(length);
