@@ -8,3 +8,10 @@ Open Info.plist file from your project directory/ios/{appname} directory and
 2. For android app, you can change in android folder of your project directory. cd android/app/src/main/res/values/
 open strings.xml file and change you app name in
  <string name="app_name">NEW APP NAME</string>
+ 
+ 
+ PUSH NOTIFICATION:
+ 
+ Flipper Error: 
+ 
+  podfile => firstcomment flipper usefipper ==> then install pods 
